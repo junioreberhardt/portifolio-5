@@ -14,8 +14,9 @@
 
         <nav class="navbar">
             <div class="box theme">
-                <div class="item">
-                    <ion-icon name="sunny"></ion-icon>
+                <div class="item" onclick="theme()">
+                    <ion-icon class="lightBtn" name="sunny-outline"></ion-icon>
+                    <ion-icon class="darkBtn" name="moon-outline"></ion-icon>
                 </div>
             </div>
             <div class="box nav">
@@ -61,7 +62,7 @@
             <img class="header" src="assets/img/header.jpg" alt="header">
             <img class="img" src="assets/img/avatar.jpg" alt="profile">
             <h2>Junior Eberhardt</h2>
-            <p class="colored">Full-Stack Web Developer</p>
+            <p id="typed" class="colored">Full-Stack Web Developer</p>
 
             <ul>
                 <li><a href="#"><ion-icon name="logo-github"></ion-icon></a></li>
@@ -93,7 +94,7 @@
                     Fugiat, tenetur.
                 </p>
 
-                <section class="achivements">
+                <!-- <section class="achivements">
                     <div>
                         <h3>
                             <ion-icon name="layers-outline"></ion-icon>
@@ -198,6 +199,47 @@
                             harum consequuntur facilis temporibus repudiandae fugit veritatis?
                         </p>
                     </div>
+                </section> -->
+
+                <h1>Meus <span class="colored">Projetos</span></h1>
+                <div class="divider ltr"></div>
+
+                <section class="projects">
+                    <div class="project-1">
+                        <img src="assets/img/projects/project-1.jpg" alt="Projeto #1">
+                        <h3>Project <span class="colored">Android</span></h3>
+                    </div>
+                    <div class="project-2">
+                        <img src="assets/img/projects/project-2.jpg" alt="Projeto #1">
+                        <h3>Project <span class="colored">Android</span></h3>
+                    </div>
+                    <div class="project-3">
+                        <img src="assets/img/projects/project-3.jpg" alt="Projeto #1">
+                        <h3>Project <span class="colored">Android</span></h3>
+                    </div>
+                    <div class="project-4">
+                        <img src="assets/img/projects/project-4.jpg" alt="Projeto #1">
+                        <h3>Project <span class="colored">Android</span></h3>
+                    </div>
+                    <div class="project-5">
+                        <img src="assets/img/projects/project-5.jpg" alt="Projeto #1">
+                        <h3>Project <span class="colored">Android</span></h3>
+                    </div>
+                    <div class="project-6">
+                        <img src="assets/img/projects/project-6.jpg" alt="Projeto #1">
+                        <h3>Project <span class="colored">Android</span></h3>
+                    </div>
+                    <div class="project-7">
+                        <img src="assets/img/projects/project-7.jpg" alt="Projeto #1">
+                        <h3>Project <span class="colored">Android</span></h3>
+                    </div>
+                </section><!--projects-->
+
+                <h1>Fale <span class="colored">Comigo</span></h1>
+                <div class="divider ltr"></div>
+
+                <section class="contact">
+
                 </section>
 
             </div>
@@ -206,6 +248,8 @@
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>

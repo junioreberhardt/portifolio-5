@@ -35,6 +35,22 @@ body.light {
     --accent-04: #d5f3f9;
 }
 
+.lightBtn {
+    display: none;
+}
+
+.darkBtn {
+    display: inline-block;
+}
+
+body.light .lightBtn {
+    display: inline-block;
+}
+
+body.light .darkBtn {
+    display: none;
+}
+
 .container {
     display: grid;
     gap: 0.5rem;
@@ -351,6 +367,80 @@ section {
     }
 }
 
+/* projects */
+.projects {
+    display: grid;
+    gap: 1rem;
+
+    .project-1 {
+        grid-area: p1;
+    }
+
+    .project-2 {
+        grid-area: p2;
+    }
+
+    .project-3 {
+        grid-area: p3;
+    }
+
+    .project-4 {
+        grid-area: p4;
+    }
+
+    .project-5 {
+        grid-area: p5;
+    }
+
+    .project-6 {
+        grid-area: p6;
+    }
+
+    .project-7 {
+        grid-area: p7;
+    }
+
+    div {
+        border-radius: 1rem;
+        overflow: hidden;
+        cursor: pointer;
+        position: relative;
+
+        img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+            transition: 0.5s;
+        }
+
+        &:hover {
+            img {
+                filter: brightness(0.5);
+            }
+
+            h3 {
+                opacity: 1;
+            }
+        }
+    }
+
+    h3 {
+        position: absolute;
+        inset: 0;
+        width: fit-content;
+        height: fit-content;
+        margin: auto;
+        opacity: 0;
+        transition: opacity 0.5s;
+    }
+
+    body.light & {
+        h3 {
+            color: var(--accent-04);
+        }
+    }
+}
+
 /* medias */
 @media screen and (width >=1024px) {
     .container {
@@ -359,6 +449,14 @@ section {
 
     .skills div:nth-child(7) {
         grid-column: 3 / span 2;
+    }
+
+    .projects {
+        grid-template-areas:
+            "p1 p2 p2"
+            "p3 p4 p5"
+            "p3 p6 p6"
+            "p7 p6 p6";
     }
 }
 
@@ -383,6 +481,16 @@ section {
 
     .skills div:nth-child(7) {
         grid-column: 1 / -1;
+    }
+
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "p1 p2"
+            "p3 p4"
+            "p5 p6"
+            "p7 p7"
+        ;
     }
 }
 
@@ -426,6 +534,19 @@ section {
 
     .skills div:nth-child(7) {
         grid-column: 1 / -1;
+    }
+
+    .projects {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas:
+            "p1"
+            "p2"
+            "p3"
+            "p4"
+            "p5"
+            "p6"
+            "p7"
+        ;
     }
 }
 
