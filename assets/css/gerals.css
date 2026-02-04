@@ -74,7 +74,8 @@ body.light .darkBtn {
     grid-auto-columns: max-content;
     grid-auto-rows: max-content;
     position: sticky;
-    top: 5rem;
+    /* top: 5rem; */
+    top: 0.5rem;
     z-index: 5;
     cursor: pointer;
     font-weight: 500;
@@ -360,10 +361,10 @@ section {
 
     .date {
         padding: 0.5rem 1rem;
+        margin-top: 2rem;
         background-color: var(--accent-04);
         border-radius: 0.4rem;
         color: var(--accent-02);
-        margin-top: 2rem;
         font-size: 1.4rem;
         font-weight: 400;
     }
@@ -575,7 +576,7 @@ body.light .contact .text::placeholder {
         grid-template-columns: 1fr;
         max-width: 50rem;
         padding: 2rem;
-        padding-top: 5rem;
+        padding-top: 0.5rem;
     }
 
     .navbar {
@@ -611,6 +612,8 @@ body.light .contact .text::placeholder {
     .skills div:nth-child(7) {
         grid-column: 1 / -1;
     }
+
+    .experience {}
 
     .projects {
         grid-template-columns: repeat(1, 1fr);
