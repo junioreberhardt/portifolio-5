@@ -1,9 +1,9 @@
 // Faz o efeito digitação
 let typed = new Typed('#typed', {
-    strings: ['Full-Stack Desenvolvedor Web', 'HTML, CSS, JS', 'Python, PHP', 'UI/UX'],
-    typeSpeed: 50,
+    strings: ['Desenvolvedor Web Full-Stack', 'HTML, CSS, JS', 'Python, PHP'],
+    typeSpeed: 40,
     backSpeed: 20,
-    backDelay: 3000,
+    backDelay: 2000,
     showCursor: false,
     loop: true
 })
@@ -23,3 +23,17 @@ window.addEventListener('DOMContentLoaded', () => {
         document.body.classList.toggle('light')
     }
 })
+
+// menu active
+const menuItems = document.querySelectorAll('.nav .item');
+let currentActive = document.querySelector('.nav .item.active');
+
+menuItems.forEach(item => {
+    item.addEventListener('click', () => {
+        if (currentActive) {
+            currentActive.classList.remove('active');
+        }
+        item.classList.add('active');
+        currentActive = item;
+    });
+});

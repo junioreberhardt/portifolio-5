@@ -9,6 +9,7 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -118,6 +119,7 @@ body.light .darkBtn {
 
     p {
         margin-top: 1rem;
+        min-height: 3rem;
     }
 
     ul {
@@ -286,7 +288,7 @@ section {
             border-radius: 50%;
         }
 
-        h4 {
+        h3 {
             position: relative;
             text-align: center;
             font-size: 1.2rem;
@@ -338,7 +340,7 @@ section {
         color: var(--accent-02);
     }
 
-    h4 {
+    h3 {
         padding-left: 2.4rem;
         position: relative;
         color: var(--primary-color);
@@ -441,6 +443,68 @@ section {
     }
 }
 
+/* contact */
+.map {
+    padding: 0.3rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 0 0.3rem inset rgba(3, 102, 214, 0.3);
+    width: 100%;
+}
+
+body:not(.light) .map {
+    filter: invert(90%) sepia(100%) hue-rotate(150deg) saturate(100%);
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin: 2rem 0;
+
+    .input {
+        width: 100%;
+        background-color: var(--accent-04);
+        border: 0.1rem solid var(--accent-04);
+        color: var(--accent-02);
+        border-radius: 0.5rem;
+        line-height: 3;
+        outline: none;
+        transition: border-color 0.5s;
+        padding-left: 1rem;
+
+        &:hover,
+        &:focus {
+            border: 0.1rem solid var(--primary-color);
+        }
+
+        &::placeholder,
+        .textarea::placeholder {
+            font-family: Calibri, sans-serif;
+            color: var(--accent-03);
+            filter: brightness(2);
+        }
+    }
+
+    .submit {
+        background-color: var(--primary-color);
+        color: white;
+        border: none;
+        padding: 1rem 5rem;
+        border-radius: 0.5rem;
+        transition: background-color 0.5s, filter 0.5s;
+
+        &:hover {
+            filter: brightness(0.8);
+            cursor: pointer;
+        }
+    }
+}
+
+body.light .contact .input::placeholder,
+body.light .contact .text::placeholder {
+    color: var(--accent-01);
+}
+
 /* medias */
 @media screen and (width >=1024px) {
     .container {
@@ -457,6 +521,14 @@ section {
             "p3 p4 p5"
             "p3 p6 p6"
             "p7 p6 p6";
+    }
+
+    .contact {
+        grid-template-columns: 1fr 1fr;
+
+        div:nth-child(3) {
+            grid-column: span 2;
+        }
     }
 }
 
@@ -492,6 +564,10 @@ section {
             "p7 p7"
         ;
     }
+
+    .contact {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media screen and (width <=769px) {
@@ -514,7 +590,7 @@ section {
 
     .nav {
         display: inline-grid;
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         padding: 0.5rem;
 
         .divider,
@@ -547,6 +623,14 @@ section {
             "p6"
             "p7"
         ;
+    }
+
+    .contact {
+        grid-template-columns: 1fr;
+    }
+
+    html {
+        scroll-padding-top: 16rem !important;
     }
 }
 

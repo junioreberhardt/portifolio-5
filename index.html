@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="assets/css/gerals.css">
 </head>
 
-<body class="">
+<body>
 
     <div class="container">
 
@@ -42,13 +42,6 @@
                     <div class="divider ltr"></div>
                 </div>
                 <div class="item">
-                    <a href="#blogs">
-                        <ion-icon name="reader-outline"></ion-icon>
-                        <p>blogs</p>
-                    </a>
-                    <div class="divider ltr"></div>
-                </div>
-                <div class="item">
                     <a href="#contact">
                         <ion-icon name="paper-plane-outline"></ion-icon>
                         <p>contact</p>
@@ -62,7 +55,7 @@
             <img class="header" src="assets/img/header.jpg" alt="header">
             <img class="img" src="assets/img/avatar.jpg" alt="profile">
             <h2>Junior Eberhardt</h2>
-            <p id="typed" class="colored">Full-Stack Web Developer</p>
+            <p id="typed" class="colored">Desenvolvedor Web Full-Stack</p>
 
             <ul>
                 <li><a href="#"><ion-icon name="logo-github"></ion-icon></a></li>
@@ -84,7 +77,7 @@
 
         <div class="box content">
             <div class="wrapper">
-                <h2>Hey <span class="colored">there!</span> 👋</h2>
+                <h2 id="about">Hey <span class="colored">there!</span> 👋</h2>
                 <div class="divider ltr"></div>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem similique ipsum reiciendis. Tenetur
@@ -94,7 +87,7 @@
                     Fugiat, tenetur.
                 </p>
 
-                <!-- <section class="achivements">
+                <section class="achivements">
                     <div>
                         <h3>
                             <ion-icon name="layers-outline"></ion-icon>
@@ -119,7 +112,7 @@
 
                 </section>
 
-                <h2>My <span class="colored">Skills</span></h2>
+                <h2 id="resume">My <span class="colored">Skills</span></h2>
                 <div class="divider ltr"></div>
 
                 <section class="skills">
@@ -141,13 +134,13 @@
                     </div>
                     <div>
                         <div class="circle" style="--percent:65%">
-                            <h4>65<small>%</small></h4>
+                            <h3>65<small>%</small></h3>
                         </div>
                         <p>MySQL</p>
                     </div>
                     <div>
                         <div class="circle" style="--percent:85%">
-                            <h4>85<small>%</small></h4>
+                            <h3>85<small>%</small></h3>
                         </div>
                         <p>MySQL</p>
                     </div>
@@ -163,14 +156,14 @@
                     </div>
                 </section>
 
-                <h1>My <span class="colored">Experience</span></h1>
+                <h2>My <span class="colored">Experience</span></h2>
                 <div class="divider ltr"></div>
 
                 <section class="experiences">
                     <div class="experience">
                         <h2>Senior Python Developer</h2>
-                        <h4>Google Inc. <span class="date">Oct, 2018</span> &#x26AC; <span class="date">Dec, 2020</span>
-                        </h4>
+                        <h3>Google Inc. <span class="date">Oct, 2018</span> &#x26AC; <span class="date">Dec, 2020</span>
+                        </h3>
                         <p>
                             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos possimus sit reiciendis,
                             obcaecati
@@ -179,9 +172,9 @@
                     </div>
                     <div class="experience">
                         <h2>Database Developer</h2>
-                        <h4>Freshworks Inc. <span class="date">Oct, 2018</span> &#x26AC; <span class="date">Dec,
+                        <h3>Freshworks Inc. <span class="date">Oct, 2018</span> &#x26AC; <span class="date">Dec,
                                 2020</span>
-                        </h4>
+                        </h3>
                         <p>
                             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos possimus sit reiciendis,
                             obcaecati
@@ -190,18 +183,18 @@
                     </div>
                     <div class="experience">
                         <h2>Full Stack Web Developer</h2>
-                        <h4>Integrity Software, Icc. <span class="date">Oct, 2018</span> &#x26AC; <span
+                        <h3>Integrity Software, Icc. <span class="date">Oct, 2018</span> &#x26AC; <span
                                 class="date">Dec,
-                                2020</span></h4>
+                                2020</span></h3>
                         <p>
                             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos possimus sit reiciendis,
                             obcaecati
                             harum consequuntur facilis temporibus repudiandae fugit veritatis?
                         </p>
                     </div>
-                </section> -->
+                </section>
 
-                <h1>Meus <span class="colored">Projetos</span></h1>
+                <h2 id="projects">Meus <span class="colored">Projetos</span></h2>
                 <div class="divider ltr"></div>
 
                 <section class="projects">
@@ -235,12 +228,32 @@
                     </div>
                 </section><!--projects-->
 
-                <h1>Fale <span class="colored">Comigo</span></h1>
+                <h2 id="contact">Fale <span class="colored">Comigo</span></h2>
                 <div class="divider ltr"></div>
 
-                <section class="contact">
+                <section>
+                    <iframe class="map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3577.4976413009463!2d-48.64551232546929!3d-26.277962866980367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d94c04cc8be45d%3A0x33bacf888835ecef!2sR.%20Norberto%20Nunes%20-%20Rocio%20Grande%2C%20S%C3%A3o%20Francisco%20do%20Sul%20-%20SC%2C%2089240-000!5e0!3m2!1spt-BR!2sbr!4v1770153925327!5m2!1spt-BR!2sbr"
+                        height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe><!--iframe-->
 
-                </section>
+                    <form action="#" class="contact">
+                        <div>
+                            <input type="text" class="input" name="firstname" placeholder="Your name...">
+                        </div>
+                        <div>
+                            <input type="email" class="input" name="email" placeholder="Your email...">
+                        </div>
+                        <div>
+                            <textarea class="input" name="subject" rows="4" placeholder="Write something..."></textarea>
+                        </div>
+                        <div>
+                            <button type="submit" class="submit">SEND</button>
+                        </div>
+                    </form><!--form-->
+
+                </section><!--contact-->
 
             </div>
         </div>
